@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="app/images/Icon.jpg">
+    <link rel="stylesheet" href="dist/styles.css?cb=1626633998949">
+    <script src="https://kit.fontawesome.com/59843e2a6c.js" crossorigin="anonymous"></script>
+    <!-- <script src="dist/all.js?cb=1626633998949"></script> -->
+    <title>Welcome to Nerdy Girls</title>
+</head>
+<body>
+
+    <!-- audio -->
+    <!-- <audio loop id="music">
+        <source src="app/images/Getaway Powder - DJ Freedem.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> -->
+
+    <!-- <div id="pause-button" onclick="pause()">
+        <p>mute</p>
+    </div>
+    <div id="play-button" onclick="play()">
+        <p>tunes</p>
+    </div>
+    <script>
+        
+        var myMusic= document.getElementById("music");
+        myMusic.volume = 0.3;
+        var pauseButton = document.getElementById("pause-button");
+        var playButton = document.getElementById("play-button");
+        playButton.style.display = 'none';
+
+        function pause() {
+            myMusic.pause();
+            pauseButton.style.display = 'none';
+            playButton.style.display = 'flex';
+        }
+
+        function play() {
+            myMusic.play();
+            playButton.style.display = 'none';
+            pauseButton.style.display = 'flex';
+        }
+        
+    </script> -->
+
+    <div class="container">
+        <!-- <img id="left-lantern" src="app/images/LeftLantern.png">
+        <img id="right-lantern" src="app/images/RightLantern.png"> -->
+
+
+
+        <div class="inner-container">
+
+            <div class="svg-container" id="scroll-up-container">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 550.39 582.05">
+                    <defs>
+                        <style>
+                            .cls-1{
+                                fill:none;
+                                stroke:#dadada;
+                                stroke-miterlimit:10;
+                                stroke-width:4px;
+                            }
+                            .cls-2{
+                                fill:#dadada;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <image width="476" height="273" transform="scale(1.16)" xlink:href="app/images/Glitch_Logo.png" id="glitch-logo"/>
+                            <image width="300" height="200" transform="translate(172.32 382.18) scale(0.69)" xlink:href="app/images/Switch_On.png"/>
+                            <image width="300" height="200" transform="translate(172.32 382.18) scale(0.69)" xlink:href="app/images/Switch_Off.png" id="switch-off" onclick="transition('switch-off');"/>
+                            <image width="599" height="50" transform="translate(121.15 556.33) scale(0.51)" xlink:href="app/images/Click_To_Enter.png"/>
+                            <path class="cls-1" d="M121.87,538.7s-6.35-23.54-4.92-44.92c1.17-17.4,7.5-33.36,26.6-34"/>
+                            <path class="cls-2" d="M142.71,441l.39,39.38,18-20.9S142.13,441,142.71,441Z"/>
+                        </g>
+                    </g>
+                </svg>
+
+                <script>
+                    //Hiding the image using regular JavaScript.
+                    function transition(swth) {
+                        var unit = document.getElementById("scroll-up-container");
+                        var logo = document.getElementById("glitch-logo");
+                        
+                        document.getElementById(swth).style.display = 'none';
+                        logo.classList.add("active");
+                        setTimeout(newPage, 1000);
+                    }
+
+                    function newPage() {
+                        window.location.href = "home.html";
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
